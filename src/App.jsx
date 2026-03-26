@@ -1,11 +1,13 @@
-﻿import { useState } from 'react'
+import { useState } from 'react'
 import './App.css'
 import Navbar from './components/Navbar'
-import Home from './pages/Home'
-import Dashboard from './pages/Dashboard'
-import Login from './pages/Login'
-import About from './pages/About'
-import Teams from './pages/Teams'
+import Home from './Pages/Home'
+import Dashboard from './Pages/Dashboard'
+import Login from './Pages/Login'
+import About from './Pages/About'
+import Teams from './Pages/Teams'
+
+import Footer from './components/Footer'
 
 function App() {
   const [page, setPage] = useState('home')
@@ -40,7 +42,7 @@ function App() {
   return (
     <div className="f1-app">
       <Navbar currentPage={page} onNavigate={setPage} />
-      <main>
+      <main className="f1-page-main">
         {page === 'home' && <Home />}
         {page === 'dashboard' && <Dashboard />}
         {page === 'teams' && <Teams />}
@@ -59,6 +61,7 @@ function App() {
           />
         )}
       </main>
+      <Footer />
     </div>
   )
 }
