@@ -182,3 +182,33 @@
     border-right-color: var(--border);
   }
 }
+
+/* F1 login + navbar styles */
+.f1-app { min-height: 100vh; background: linear-gradient(180deg, #1f1f1f 0%, #111 100%); color: #fff; }
+.f1-navbar { display: flex; align-items: center; justify-content: space-between; padding: 0.8rem 2rem; background: rgba(0,0,0,0.65); border-bottom: 1px solid rgba(255,255,255,0.12); position: sticky; top: 0; z-index: 10; }
+.f1-brand { font-weight: 700; letter-spacing: 0.08em; font-size: 1.15rem; color: #e10600; text-transform: uppercase; }
+.f1-nav-links { display: flex; gap: 1rem; }
+.f1-nav-links a { color: #ededed; text-decoration: none; font-weight: 500; padding: 0.45rem 0.7rem; border-radius: 8px; transition: background 0.2s, transform 0.2s; }
+.f1-nav-links a:hover, .f1-nav-links a.active { background: rgba(225, 16, 16, 0.2); transform: translateY(-1px); color: #fff; }
+.f1-login-wrap { display: grid; place-items: center; min-height: calc(100vh - 72px); padding: 2rem 1rem; }
+.f1-login-card { width: min(440px, 100%); background: rgba(14,14,14,0.92); border: 1px solid rgba(255,255,255,0.12); border-radius: 18px; padding: 2rem; box-shadow: 0 18px 45px rgba(0,0,0,0.5); }
+.f1-login-card h1 { margin: 0 0 0.5rem; font-size: 1.7rem; color: #ff2800; }
+.f1-login-card p { margin: 0 0 1.2rem; color: #dcdcdc; }
+.f1-login-form { display: flex; flex-direction: column; gap: 0.8rem; }
+.f1-login-form label { font-size: 0.9rem; margin-bottom: 0.2rem; }
+.f1-login-form input[type="email"], .f1-login-form input[type="password"] { width: 100%; padding: 0.72rem 0.9rem; border: 1px solid rgba(255,255,255,0.2); border-radius: 10px; background: rgba(22,22,22,0.96); color: #fff; }
+.f1-login-form input:focus { outline: 2px solid rgba(222, 40, 40, 0.65); outline-offset: 2px; border-color: rgba(222, 40, 40, 0.9); }
+.f1-checkbox-wrapper { margin: 0.35rem 0 0.25rem; color: #ccc; font-size: 0.9rem; }
+.f1-checkbox-wrapper input { margin-right: 0.35rem; accent-color: #e10600; }
+.f1-submit-btn { margin-top: 0.8rem; background: linear-gradient(110deg, #e10600 0%, #ff7f7f 100%); color: #fff; border: none; border-radius: 10px; padding: 0.78rem; font-size: 1rem; font-weight: 700; cursor: pointer; box-shadow: 0 8px 18px rgba(225, 16, 16, 0.5); transition: transform 0.2s, filter 0.2s; }
+.f1-submit-btn:hover { transform: translateY(-1px); filter: brightness(1.04); }
+.f1-helper { margin: 0.9rem 0 0; font-size: 0.84rem; color: #d2d2d2; }
+.f1-alert { border-radius: 8px; padding: 0.6rem 0.8rem; margin-bottom: 0.8rem; font-size: 0.9rem; }
+.f1-alert-error { background: rgba(255, 50, 50, 0.16); border: 1px solid rgba(255, 50, 50, 0.36); color: #fff; }
+.f1-alert-success { background: rgba(20, 180, 80, 0.16); border: 1px solid rgba(20, 180, 80, 0.36); color: #ddffd9; }
+@media (max-width: 780px) {
+  .f1-navbar { flex-wrap: wrap; gap: 0.6rem; justify-content: center; }
+  .f1-nav-links { justify-content: center; flex-wrap: wrap; }
+  .f1-login-card { padding: 1.4rem; }
+}
+
