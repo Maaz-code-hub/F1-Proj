@@ -212,3 +212,17 @@
   .f1-login-card { padding: 1.4rem; }
 }
 
+/* Home + Dashboard styles */
+.f1-home-section, .f1-dashboard-section { max-width: 1080px; margin: 1.8rem auto 2.2rem; padding: 1rem 1.2rem; color: #fff; }
+.f1-home-section h1, .f1-dashboard-section h1 { margin-bottom: 0.45rem; color: #ff2200; }
+.f1-home-section p, .f1-dashboard-section p { margin-bottom: 1.1rem; color: #ddd; }
+.f1-card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
+.f1-card { background: rgba(12, 12, 12, 0.92); border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 16px; padding: 1rem 1.2rem; box-shadow: 0 12px 18px rgba(0, 0, 0, 0.4); }
+.f1-card h2 { margin: 0 0 0.45rem; font-size: 1.05rem; color: #f58c34; }
+.f1-card p { margin: 0; color: #efefef; }
+.f1-dashboard-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; }
+.f1-box { background: rgba(20, 20, 20, 0.96); border: 1px solid rgba(255, 255, 255, 0.14); border-radius: 14px; padding: 1rem; }
+.f1-box strong { display: block; font-size: 1rem; color: #ff5a18; margin-bottom: 0.4rem; }
+.f1-box p { margin: 0; color: #dcdcdc; }
+.f1-nav-links button { background: transparent; border: none; color: #eee; font-weight: 600; padding: 0.45rem 0.7rem; border-radius: 8px; cursor: pointer; transition: background 0.2s, color 0.2s; }
+.f1-nav-links button:hover, .f1-nav-links button.active { background: rgba(225, 16, 16, 0.2); color: #fff; }
