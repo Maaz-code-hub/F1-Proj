@@ -17,6 +17,9 @@ function Navbar({ currentPage, onNavigate }) {
         <button type="button" className={currentPage === 'teams' ? 'active' : ''} onClick={() => onNavigate('teams')}>
           Teams
         </button>
+        <button type="button" className={currentPage === 'events' ? 'active' : ''} onClick={() => onNavigate('events')}>
+          Upcoming GP
+        </button>
         <button type="button" className={currentPage === 'about' ? 'active' : ''} onClick={() => onNavigate('about')}>
           About Us
         </button>

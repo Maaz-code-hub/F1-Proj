@@ -6,6 +6,7 @@ import Dashboard from './Pages/Dashboard'
 import Login from './Pages/Login'
 import About from './Pages/About'
 import Teams from './Pages/Teams'
+import UpcomingEvents from './Pages/UpcomingEvents'
 
 import Footer from './components/Footer'
 
@@ -46,6 +47,7 @@ function App() {
         {page === 'home' && <Home />}
         {page === 'dashboard' && <Dashboard />}
         {page === 'teams' && <Teams />}
+        {page === 'events' && <UpcomingEvents />}
         {page === 'about' && <About />}
         {page === 'login' && (
           <Login
